@@ -1,0 +1,361 @@
+.Screen {
+    position: relative;
+    background: #251A53;
+    display: flex;
+    &Main {
+        height: calc(100vh - 71px - 30px - 30px);
+        width: 100vw;
+        background: #080A27;
+        padding: 30px 20px;
+        border-radius: 20px var(--Number-0, 0px) var(--Number-0, 0px) var(--Number-0, 0px);
+        display: flex;
+        gap: 25px;
+        @media (max-width: 1600px) {  
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 480px) {  
+            height: auto;
+            padding: 5px 20px;
+        }
+    }
+}
+
+.Main {
+    min-width: 600px;
+    // height: 880px;
+    padding: 30px 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #3E386B 0%, rgba(130, 114, 195, 0.31) 50%, rgba(159, 138, 244, 0.12) 98.5%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (max-width: 970px) {  
+        min-width: 400px;
+        padding: 10px 10px;
+    }
+    @media (max-width: 480px) {  
+        min-width: 300px;
+    }
+    @media (max-width: 360px) {  
+        min-width: 250px;
+    }
+
+    &Img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 480px) {  
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &Group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 122.263%; /* 24.453px */
+        letter-spacing: 3px;
+    }
+
+    &List {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 12px;
+    }
+
+    &Info {
+        display: flex;
+        justify-content: space-between;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 122.263%; /* 19.562px */
+        letter-spacing: 2.4px;
+    }
+}
+
+.Block {
+    width: 127px;
+    height: 127px;
+    border-radius: 10px;
+    background: rgba(25, 25, 60, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 480px) {  
+        width: 70px;
+        height: 70px;
+    }
+
+    &Active {
+        border: var(--Number-2, 2px) solid #5B40D1;
+        border-radius: 10px;
+
+    }
+
+    &Img {
+        width: 90px;
+        height: 90px;
+        @media (max-width: 480px) {  
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+.Right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122.263%; /* 24.453px */
+    letter-spacing: 3px;
+    @media (max-width: 1670px) {  
+        font-size: 14px;
+    }
+
+    &List {
+        max-width: 800px;
+        height: 240px;
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        @media (max-width: 970px) {  
+            gap: 5px;
+        }
+        @media (max-width: 840px) {  
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+        @media (max-width: 480px) {  
+            margin-bottom: 250px;
+        }
+    }
+
+    // &List::-webkit-scrollbar {
+    //     width: 3px;
+    // }
+
+    &Block {
+        border-radius: 10px;
+        background: linear-gradient(180deg, #3E386B 0.01%, rgba(109, 85, 210, 0.40) 0.02%, rgba(109, 85, 210, 0.40) 0.03%, rgba(44, 40, 87, 0.08) 69.17%, rgba(159, 138, 244, 0.06) 98.49%, rgba(159, 138, 244, 0.06) 98.5%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: #FFF;
+        text-align: right;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 122.263%; /* 19.562px */
+        letter-spacing: 1.6px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 14px;
+        padding-bottom: 8px;
+    }
+
+    &Img {
+        width: 100px;
+        height: 100px;
+    }
+
+    &Cost {
+        width: 85px;
+        height: 27px;
+        background: linear-gradient(90deg, #413B78 0%, #A294E7 100%);
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        align-items: center;
+        
+        &Img {
+            margin-top: 2px;
+        }
+    }
+}
+
+.TextName {
+    width: 118px;
+}
+
+.Empty1 {
+    left: -25px;
+    bottom: 35px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    background-color: #080A27;
+}
+
+.Empty2 {
+    right: -25px;
+    bottom: 35px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    background-color: #080A27;
+}
+
+
+.Skip {
+    width: 180px;
+    height: 270px;
+    border-radius: 20px;
+    background: #8379B9;
+    overflow: hidden;
+    @media (max-width: 480px) {  
+        transform: scale(0.7);
+        margin-left: -25px;
+        margin-right: -25px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+    
+    &Top {
+        width: 180px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 20px 20px var(--Number-0, 0px) var(--Number-0, 0px);
+        background: #4B4484;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &Text {
+            background: linear-gradient(90deg, #8D4AF8 7.34%, #8880CE 7.35%, #8F73AE 93.61%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &Main {
+        &H {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &Bold {
+            background: linear-gradient(90deg, #1C1C50 41.06%, #8271CD 117.2%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        &Button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            width: 140px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            color: #FFF;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 122.263%; /* 39.124px */
+            letter-spacing: 3.2px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #413B78 0%, #A294E7 100%);
+
+            &Img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &Line {
+            margin-left: -15px;
+            width: 200px;
+            position: absolute;
+            bottom: 60px;
+        }
+
+        position: relative;
+        height: 182px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: left;
+        padding: 10px 15px;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 122.263%; /* 17.117px */
+        letter-spacing: 2.1px;
+    }
+}
+
+.InActive {
+    background: #251A53;
+}
+
+.Stroke {
+    width: 100px;
+    height: 100px;
+}
+
+.TogImg, .TogMain {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgUser {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TogMain {
+    position: relative;
+}
+
+.StrokeImg {
+    width: 210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 480px) {  
+        width: 110px;
+        height: 110px;
+    }
+}

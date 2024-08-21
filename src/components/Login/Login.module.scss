@@ -1,0 +1,206 @@
+.Screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    position: relative;
+    background: #080A27;;
+}
+
+.TrianLogo {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+
+.UnderCompetition {
+    position: absolute;
+    left: 40%; top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.Logo {
+    // width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 830px) {  
+        width: 500px;
+    }
+    @media (max-width: 512px) {  
+        width: 300px;
+    }
+}
+
+.Make {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Place {
+    width: 625px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #6D55D2 0%, rgba(159, 138, 244, 0.31) 50%, rgba(159, 138, 244, 0.12) 98.5%);
+    padding-top: 36px;
+    padding-bottom: 42px;
+    padding-left: 85px;
+    padding-right: 85px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 830px) {  
+        width: 400px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @media (max-width: 512px) {  
+        width: 280px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 10px;
+
+    }
+
+    &Title {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 122.263%;
+        letter-spacing: 3.4px;
+        margin-bottom: 32px;
+        @media (max-width: 830px) {  
+            font-size: 30px;
+        }
+        @media (max-width: 512px) {  
+            letter-spacing: 1.4px;
+
+            font-size: 24px;
+
+        }
+    }
+    
+    &Together {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+        @media (max-width: 512px) {  
+            font-size: 14px;
+        }
+    }
+
+    &Hr {
+        width: 449px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: rgba(158, 137, 243, 0.80);
+        @media (max-width: 830px) {  
+            width: 400px;
+        }
+        @media (max-width: 512px) {  
+            width: 280px;
+        }
+    }
+
+    &Input {
+        position: relative;
+        z-index: 100;
+        height: 32px;
+        width: 449px;
+        outline: none;
+        border-color: transparent;
+        background-color: transparent;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+        @media (max-width: 830px) {  
+            width: 400px;
+        }
+        @media (max-width: 512px) {  
+            font-size: 14px;
+            width: 280px;
+        }
+    }
+
+    &Inputs {
+        margin-left: auto;
+        margin-right: auto;   
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &Message {
+        text-align: center;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 1.6px;
+    }
+
+    &Bold {
+        background: linear-gradient(90deg, #9E89F3 43.87%, #FFF 90.64%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &In {
+        margin-top: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 329px;
+        height: 38px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #8C79DB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 1.6px;
+        @media (max-width: 512px) {  
+            font-size: 14px;
+            width: 280px;
+        }
+    }
+}
+
+.Wrong {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: rgb(170, 12, 12);
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%;
+    letter-spacing: 1.6px;
+}
+

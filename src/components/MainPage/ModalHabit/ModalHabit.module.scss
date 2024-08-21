@@ -1,0 +1,164 @@
+.Screen {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal {
+    position: absolute;
+    z-index: 1111;
+    width: 400px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #6D55D2 10%, #3E386B 98.5%);
+    // background-color: #3E386B;
+    // background: linear-gradient(180deg, #6D55D2 0%, rgba(159, 138, 244, 0.31) 50%, rgba(159, 138, 244, 0.12) 98.5%);
+    padding-top: 36px;
+    padding-bottom: 42px;
+    padding-left: 85px;
+    padding-right: 85px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+    @media (max-width: 600px) { 
+        width: 300px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        padding-bottom: 24px;
+    }
+    @media (max-width: 369px) {  
+        width: 280px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+}
+
+.Title {
+    text-align: center;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.263%;
+}
+
+.Rect {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--Number-4, 4px);
+    border: var(--Number-2, 2px) solid var(--Color-Base-White, #FFF);
+    @media (max-width: 600px) {  
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.Tick {
+    display: flex;
+    gap: 16px;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.263%; 
+    @media (max-width: 600px) {  
+        font-size: 14px;
+    }
+}
+
+.SaveButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 329px;
+    height: 38px;
+    border-radius: 20px;
+    background: #8C79DB;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%; /* 19.562px */
+    letter-spacing: 1.6px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 600px) {  
+        width: 150px;
+    }
+}
+
+.TypeSecond {
+    display: flex;
+    gap: 8px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%;
+    letter-spacing: 2px;
+    @media (max-width: 600px) {  
+        font-size: 14px;
+    }
+}
+
+.In {
+    &Together {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+    }
+
+    &Hr {
+        width: 110px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: rgba(158, 137, 243, 0.80);
+    }
+
+    &Input {
+        position: relative;
+        z-index: 100;
+        height: 24px;
+        width: 110px;
+        outline: none;
+        border-color: transparent;
+        background-color: transparent;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+    }
+}
+
+.DoneTick {
+    margin-left: 5px;
+    margin-top: -2px;
+    width: auto;
+    height: auto;
+    @media (max-width: 600px) {  
+        width: 20px;
+    }
+}

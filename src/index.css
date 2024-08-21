@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  font-family: Mulish, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 0px;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.none {
+  visibility: hidden;
+}

@@ -1,0 +1,236 @@
+.FixedHeader {
+    position: fixed;
+    z-index: 100000;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+}
+
+.AllScreen {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 425px) {  
+        overflow-x: hidden;
+    }
+}
+
+body {
+    background-color: #080A27;
+    background-image: url("../../assets/planets/sky.png");
+    background-size: cover;
+
+}
+
+.Screen {
+    position: relative;
+    @media (max-width: 1440px) {  
+        margin-top: 60px;  
+        transform: rotate(90deg) scale(0.6);
+    }
+    @media (max-width: 700px) {  
+        margin-top: -170px;  
+        transform: rotate(90deg) scale(0.4);
+    }
+    @media (max-width: 500px) {  
+        margin-top: -240px;  
+        transform: rotate(90deg) scale(0.39);
+    }
+    @media (max-width: 370px) {  
+        margin-top: -280px;  
+        transform: rotate(90deg) scale(0.34);
+    }
+}
+
+.Path {
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.Planet {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg);
+    }
+
+    &Ico {
+        position: absolute;
+        z-index: 1000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &Text {
+        position: absolute;
+        width: 32px;
+        z-index: 1001;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        text-align: center;
+        font-family: "KyivType Sans";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 122.263%; /* 78.248px */
+        letter-spacing: 9.6px;
+    }
+}
+
+.First {
+    left: 0px;
+    top: 600px;
+}
+
+
+.Second {
+    transform: scale(1.2);
+    left: 200px;
+    top: 180px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.2);
+    }
+}
+
+.Third {
+    transform: scale(1.3);
+    left: 460px;
+    top: 760px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.3);
+    }
+}
+
+.Fourth {
+    transform: scale(0.7);
+    left: 600px;
+    top: 300px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(0.7);
+    }
+}
+
+.Fifth {
+    transform: scale(1.1);
+    left: 800px;
+    top: 700px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.1);
+    }
+}
+
+.Sixth {
+    transform: scale(1.5);
+    left: 1040px;
+    top: 130px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.5);
+    }
+}
+
+.Seventh {
+    transform: scale(1.1);
+    left: 1100px;
+    top: 780px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.1);
+    }
+}
+
+.Eighth {
+    left: 1320px;
+    top: 300px;
+}
+
+.Ninth {
+    transform: scale(1.5);
+    left: 1620px;
+    top: 570px;
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.5);
+    }
+}
+
+.Sun {
+    left: 1630px;
+    top: -100px;
+
+    &Text {
+        width: 75px;
+    }
+}
+
+.Info {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #604DB2 0%, rgba(159, 138, 244, 0.31) 33.5%, rgba(159, 138, 244, 0.27) 98.5%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122.263%; 
+    @media (max-width: 1440px) {  
+        transform: rotate(-90deg) scale(1.2);
+    }
+}
+
+.FirstT {
+    left: 170px;
+    top: 630px;
+}
+
+.SecondT {
+    left: 400px;
+    top: 210px;
+}
+
+.ThirdT {
+    left: 650px;
+    top: 780px;
+}
+
+.FourthT {
+    left: 750px;
+    top: 330px;
+}
+
+.FifthT {
+    left: 975px;
+    top: 715px;
+}
+
+.SixthT {
+    left: 1250px;
+    top: 160px;
+}
+
+.SeventhT {
+    left: 1280px;
+    top: 800px;
+}
+
+.EighthT {
+    left: 1500px;
+    top: 330px;
+}
+
+.NinthT {
+    left: 1840px;
+    top: 600px;
+}
+
+.SunT {
+    left: 1780px;
+    top: 240px;
+}

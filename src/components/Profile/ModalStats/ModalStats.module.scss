@@ -1,0 +1,186 @@
+.Screen {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreateHabit {
+    position: absolute;
+    z-index: 10;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #6D55D2 10%, #3E386B 98.5%);
+    // background: linear-gradient(180deg, #6D55D2 10%, rgba(159, 138, 244, 0.31) 50%, rgba(159, 138, 244, 0.12) 98.5%);
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 600px) { 
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 24px;
+    }
+    @media (max-width: 369px) {  
+        width: 280px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+
+    &Together {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+    }
+
+    &Hr {
+        width: 449px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: rgba(158, 137, 243, 0.80);
+        @media (max-width: 600px) { 
+            width: 250px;
+        }
+        @media (max-width: 369px) {  
+            width: 230px;
+        }
+    }
+
+    &Input {
+        position: relative;
+        z-index: 100;
+        height: 32px;
+        width: 449px;
+        outline: none;
+        border-color: transparent;
+        background-color: transparent;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.263%;
+        letter-spacing: 2px;
+        @media (max-width: 600px) { 
+            width: 250px;
+        }
+        @media (max-width: 369px) {  
+            width: 230px;
+        }
+    }
+
+    &Inputs {
+        margin-left: auto;
+        margin-right: auto;   
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &_Checkbox {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+input::-webkit-input-placeholder, input::-moz-placeholder { color: #FFF; }
+
+.Label {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%;
+    letter-spacing: 2px;
+}
+
+.In {
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 329px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #8C79DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%;
+    letter-spacing: 1.6px;
+    @media (max-width: 600px) { 
+        width: 250px;
+    }
+    @media (max-width: 369px) {  
+        width: 230px;
+    }
+}
+
+.Select {
+    margin-top: 6px;
+    outline: none;
+    width: 200px;
+    height: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%;
+    letter-spacing: 1.6px;
+    background: #8C79DB;
+    border-radius: 20px;
+
+}
+
+.Not {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 122.263%; /* 19.562px */
+    letter-spacing: 1.6px;
+
+    &H {
+        background: linear-gradient(90deg, #9E89F3 43.87%, #FFF 90.64%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.Graph {
+    color: #FFF;
+}
